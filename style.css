@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --first:#ecf0f3;
+    --second:#212121;
+    --light:rgba(0,0,0,0.16);
+    --dark:rgba(255,255,255,0.16);
+}
+
+.dark{
+    --first:#212121;
+    --second:#ecf0f3;
+    --light:rgba(255,255,255,0.16);
+    --dark:rgba(0,0,0,0.16);
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--first);
+}
+
+.text_calc {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--second);
+}
+
+.bg {
+    height: 40em;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--first);
+    border-radius: 3rem;
+    padding-top: .2rem;
+    box-shadow: inset 7px 7px 15px var(--first),inset 6px 6px 12px var(--light);
+}
+
+/* .m-w {
+    max-width: 45vh;
+    height: 70vh;
+} */
+
+.mx-auto {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: var(--first);
+    border: none; 
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 12px var(--light),5px 5px 12px var(--light);
+    color: var(--second);
+    font-size: 36px;
+    font-weight: bolder;
+    padding:.2rem;
+    margin: .7rem;
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.rows {
+    margin-top: 1rem;
+}
+
+.textbox {
+    border: none;
+    box-shadow: inset -5px -5px 12px #fff,inset 5px 5px 12px var(--light);
+    text-align: end;
+    font-size: 5rem;
+    outline: none;
+    color: var(--second);
+    border-radius: 3rem;
+    background-color: var(--first);
+    height: 7rem;
+    width: 24rem;
+    font-family: 'Poppins', sans-serif;
+}
+.icon{
+    margin: 0.5rem;
+    cursor: pointer;
+    height: 2em;
+}
